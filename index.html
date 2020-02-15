@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="reset.css" >
+    <link rel="stylesheet" type="text/css" href="/assets/fonts.css" >
     <title>Singolo</title>
     <style>
         div.main{
@@ -27,14 +28,94 @@
             background-color: #f06c64;
             border-bottom: solid 6px #ea676b;
             box-sizing: border-box;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 40px 5px 42px;
         }
-        div.ourServices{
+        
+       div.logo>a{
+        font-size: 25px;
+        color: #ffffff;
+        font-family: "Lato Bold";
+        font-weight: 700;
+        text-align: left;
+        text-transform: uppercase;
+        letter-spacing: -0.02em;
+       }
+       div.logo>a>span{
+           color: #f06c64;
+       }
+       div.menu>a{
+        font-size: 0.75em;
+        color: #ffffff;
+        font-family: "Lato Bold";
+        font-weight: 700;
+        text-align: left;
+        text-transform: uppercase;
+        letter-spacing: -0.02em;
+       }
+       div.menu{
+           margin-right:40px;
+           padding-top: 43px;
+           display: flex;
+           width: 372px;
+           justify-content: space-between;
+       }
+       div.menu>div{
+        font-size: 12px;
+        color: #494e62;
+        font-family: "Lato Bold";
+        font-weight: 700;
+        
+       }
+       div.logo{
+           padding-top:32px;
+           padding-left:40px;
+       }
+       div.servHead>h2{
+        font-size: 30px;
+        line-height: 18px;
+        color: #666d89;
+        font-family: "Lato Black";
+        font-weight: 900;
+        text-align: left;
+       }
+       div.servHead>p{
+        width: 940px;
+        height: 57px;
+        font-size: 18px;
+        line-height: 30px;
+        color: #767e9e;
+        font-family: "Lato Light";
+        font-weight: 300;
+        text-align: left;
+        word-spacing: 1px;
+        margin-top: 28px;
+       }
+       div.servHead{
+        padding-left:40px;
+        padding-top:68px;
+       }
+       div.slider{
+
+       }
+       div.ourServices{
             width: 1020px;
             height: 495px;
             background-color: #f2f2f2;
+            display: flex;
+           flex-direction:column;
+           
         }
-       
-        
+       div.firstRow, div.secRow{
+           display: flex;
+           padding: 0px 40px;
+       }
+       .firstRow div, div.secRow div{
+           width:300px;
+           height:87px;
+       }
     </style>
 </head>
 <body>
@@ -45,15 +126,58 @@
         </div>
         <div class="menu">
             <a href="#">home</a>
+            <div>·</div>
             <a href="#">services</a>
+            <div>·</div>
             <a href="#">portfolio</a>
+            <div>·</div>
             <a href="#">about</a>
+            <div>·</div>
             <a href="#">contact</a>    
         </div>
 
     </header>
-    <div class="slider"></div>
-    <div class="ourServices"></div>
+    <div class="slider">
+        <div><a><img src="assets/arrow_left.png"></a></div>
+        <div><img src="assets/iPhoneVertical.png" style="margin-left: -2px; margin-top: -2px;"></div>
+        <div><img src="assets/iPhoneHorizontal.png" style="padding-left: 19px;"></div>
+        <div><a><img src="assets/arrow_right.png"></a></div>
+    </div>
+    <div class="ourServices">
+        <div class="servHead">
+            <h2>Our Services</h2>
+            <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+        </div>
+        <div class="firstRow">
+            <div>
+                <p>Custom Design</p>
+                <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
+            </div>
+            <div>
+                <p>Inovative Ideas</p>
+                <p>Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
+            </div>
+            <div>
+                <p>Love Is The Answer</p>
+                <p>Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
+            </div>
+        </div>
+        
+        <div class="secRow">
+            <div>
+                <p>Responsive Layot</p>
+                <p>Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Praesent elit leo.</p>
+            </div>
+            <div>
+                <p>24/7 Support</p>
+                <p>Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat. Pellentesque egestas venenatis lorem .</p>
+            </div>
+            <div>
+                <p>Feel Like A Star</p>
+                <p>Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.</p>
+            </div>
+        </div>
+    </div>
     </div>
 </body>
 </html>
