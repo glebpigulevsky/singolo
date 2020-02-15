@@ -13,7 +13,7 @@
         
         header{
             width: 1020px;
-            height: 89px;
+            height: 90px;
             background-color: #2d303a;
             border-bottom: solid 6px #323746;
             display: flex;
@@ -57,7 +57,7 @@
        }
        div.menu{
            margin-right:40px;
-           padding-top: 43px;
+           padding-top: 44px;
            display: flex;
            width: 372px;
            justify-content: space-between;
@@ -70,7 +70,7 @@
         
        }
        div.logo{
-           padding-top:32px;
+           padding-top:33px;
            padding-left:40px;
        }
        div.servHead>h2{
@@ -89,13 +89,14 @@
         color: #767e9e;
         font-family: "Lato Light";
         font-weight: 300;
-        text-align: left;
-        word-spacing: 1px;
-        margin-top: 28px;
+        text-align: justify;
+        
+        margin-top: 27px;
        }
        div.servHead{
         padding-left:40px;
         padding-top:68px;
+        padding-bottom: 47px;
        }
        div.slider{
 
@@ -115,6 +116,60 @@
        .firstRow div, div.secRow div{
            width:300px;
            height:87px;
+       }
+       div.firstRow>div>h3, div.secRow>div>h3{
+        font-size: 18px;
+        color: #666d89;
+        font-family: "Lato Black";
+        font-weight: 900;
+        padding-bottom: 11px;
+       }
+     
+       div.firstRow>div>p, div.secRow>div>p{
+        width: 219px;
+        font-size: 12px;
+        line-height: 22px;
+        color: #767e9e;
+        font-family: "Lato Regular";
+        font-weight: 400;
+        text-align: left;
+        text-align: justify;
+       }
+       div.firstRow{
+           padding-bottom: 36px;
+       }
+       div.firstRow>div, div.secRow>div{
+        padding-left: 80px;
+       }
+       div.pen{
+           background-image:  url('assets/pen.png');
+           background-repeat: no-repeat;
+           background-position: 0% 10%;
+       }
+       div.bulb{
+           background-image:  url('assets/bulb.png');
+           background-repeat: no-repeat;
+           background-position: 0% 10%;
+       }
+       div.love{
+           background-image:  url('assets/heart.png');
+           background-repeat: no-repeat;
+           background-position: 0% 10%;
+       }
+       div.phone{
+           background-image:  url('assets/phone.png');
+           background-repeat: no-repeat;
+           background-position: 0% 10%;
+       }
+       div.bubble{
+           background-image:  url('assets/bubble.png');
+           background-repeat: no-repeat;
+           background-position: 0% 10%;
+       }
+       div.star{
+           background-image:  url('assets/star.png');
+           background-repeat: no-repeat;
+           background-position: 0% 10%;
        }
     </style>
 </head>
@@ -139,8 +194,8 @@
     </header>
     <div class="slider">
         <div><a><img src="assets/arrow_left.png"></a></div>
-        <div><img src="assets/iPhoneVertical.png" style="margin-left: -2px; margin-top: -2px;"></div>
-        <div><img src="assets/iPhoneHorizontal.png" style="padding-left: 19px;"></div>
+        <div><img src="assets/iPhoneVertical.png" style="margin-left: -2px; margin-top: -0.24em;"></div>
+        <div><img src="assets/iPhoneHorizontal.png" style="padding-left: 16px; margin-top: -4px;"></div>
         <div><a><img src="assets/arrow_right.png"></a></div>
     </div>
     <div class="ourServices">
@@ -149,31 +204,31 @@
             <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
         </div>
         <div class="firstRow">
-            <div>
-                <p>Custom Design</p>
+            <div class="pen">
+                <h3>Custom Design</h3>
                 <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
             </div>
-            <div>
-                <p>Inovative Ideas</p>
+            <div class="bulb">
+                <h3>Inovative Ideas</h3>
                 <p>Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
             </div>
-            <div>
-                <p>Love Is The Answer</p>
+            <div class="love">
+                <h3>Love Is The Answer</h3>
                 <p>Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
             </div>
         </div>
         
         <div class="secRow">
-            <div>
-                <p>Responsive Layot</p>
+            <div class="phone">
+                <h3>Responsive Layot</h3>
                 <p>Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Praesent elit leo.</p>
             </div>
-            <div>
-                <p>24/7 Support</p>
+            <div class="bubble">
+                <h3>24/7 Support</h3>
                 <p>Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat. Pellentesque egestas venenatis lorem .</p>
             </div>
-            <div>
-                <p>Feel Like A Star</p>
+            <div class="star">
+                <h3>Feel Like A Star</h3>
                 <p>Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.</p>
             </div>
         </div>
