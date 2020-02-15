@@ -3,21 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/assets/reset.css" >
-    <link rel="stylesheet" type="text/css" href="/assets/fonts.css" >
+    <link rel="stylesheet" type="text/css" href="assets/reset.css" >
+    <link rel="stylesheet" type="text/css" href="assets/fonts.css" >
     <title>Singolo</title>
     <style>
-        div.main{
-            margin:0 auto;
+       /* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
+ div.main{
+            position: absolute;
+            left: 50%;
+            margin-left: -510px
         }
         
         header{
             width: 1020px;
-            height: 90px;
+            height: 89px;
             background-color: #2d303a;
             border-bottom: solid 6px #323746;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            justify-content: space-between;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
         }
         a{
             text-decoration: none;
@@ -27,10 +35,17 @@
             height: 600px;
             background-color: #f06c64;
             border-bottom: solid 6px #ea676b;
-            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+                    box-sizing: border-box;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            justify-content: space-between;
-            align-items: center;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
             padding: 0px 40px 5px 42px;
         }
         
@@ -55,12 +70,19 @@
         text-transform: uppercase;
         letter-spacing: -0.02em;
        }
+       div.menu>a:hover{
+        color: #f06c64;
+       }
        div.menu{
            margin-right:40px;
            padding-top: 44px;
+           display: -webkit-box;
+           display: -ms-flexbox;
            display: flex;
            width: 372px;
-           justify-content: space-between;
+           -webkit-box-pack: justify;
+               -ms-flex-pack: justify;
+                   justify-content: space-between;
        }
        div.menu>div{
         font-size: 12px;
@@ -70,7 +92,7 @@
         
        }
        div.logo{
-           padding-top:33px;
+           padding-top:32px;
            padding-left:40px;
        }
        div.servHead>h2{
@@ -80,6 +102,7 @@
         font-family: "Lato Black";
         font-weight: 900;
         text-align: left;
+        letter-spacing: -0.005em;
        }
        div.servHead>p{
         width: 940px;
@@ -90,39 +113,44 @@
         font-family: "Lato Light";
         font-weight: 300;
         text-align: justify;
-        
         margin-top: 27px;
        }
        div.servHead{
         padding-left:40px;
         padding-top:68px;
-        padding-bottom: 47px;
-       }
-       div.slider{
-
+        padding-bottom: 48px;
        }
        div.ourServices{
             width: 1020px;
             height: 495px;
             background-color: #f2f2f2;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-           flex-direction:column;
-           
+           -webkit-box-orient:vertical;
+           -webkit-box-direction:normal;
+               -ms-flex-direction:column;
+                   flex-direction:column;
+           border-bottom: solid 6px #ffffff;
         }
        div.firstRow, div.secRow{
+           display: -webkit-box;
+           display: -ms-flexbox;
            display: flex;
            padding: 0px 40px;
        }
        .firstRow div, div.secRow div{
            width:300px;
            height:87px;
+           padding-right: 20px;
        }
        div.firstRow>div>h3, div.secRow>div>h3{
         font-size: 18px;
         color: #666d89;
         font-family: "Lato Black";
         font-weight: 900;
-        padding-bottom: 11px;
+        padding-bottom: 10px;
+        letter-spacing: -0.004em;
        }
      
        div.firstRow>div>p, div.secRow>div>p{
@@ -134,6 +162,7 @@
         font-weight: 400;
         text-align: left;
         text-align: justify;
+        line-height: 21px;
        }
        div.firstRow{
            padding-bottom: 36px;
@@ -144,32 +173,38 @@
        div.pen{
            background-image:  url('assets/pen.png');
            background-repeat: no-repeat;
-           background-position: 0% 10%;
+           background-position: 0% 5%;
        }
        div.bulb{
            background-image:  url('assets/bulb.png');
            background-repeat: no-repeat;
-           background-position: 0% 10%;
+           background-position: 0% 5%;
+        
        }
        div.love{
            background-image:  url('assets/heart.png');
            background-repeat: no-repeat;
-           background-position: 0% 10%;
+           background-position: 0% 5%;
+           margin-left: 1px;
+       }
+       div.love>h3, div.star>h3{
+           padding-left: 2px;
        }
        div.phone{
            background-image:  url('assets/phone.png');
            background-repeat: no-repeat;
-           background-position: 0% 10%;
+           background-position: 0% 5%;
        }
        div.bubble{
            background-image:  url('assets/bubble.png');
            background-repeat: no-repeat;
-           background-position: 0% 10%;
+           background-position: 0% 5%;
        }
        div.star{
            background-image:  url('assets/star.png');
            background-repeat: no-repeat;
-           background-position: 0% 10%;
+           background-position: 0% 5%;
+           margin-left: 1px;
        }
     </style>
 </head>
@@ -193,10 +228,10 @@
 
     </header>
     <div class="slider">
-        <div><a><img src="assets/arrow_left.png"></a></div>
+        <div><a href="#"><img src="assets/arrow_left.png"></a></div>
         <div><img src="assets/iPhoneVertical.png" style="margin-left: -2px; margin-top: -0.24em;"></div>
         <div><img src="assets/iPhoneHorizontal.png" style="padding-left: 16px; margin-top: -4px;"></div>
-        <div><a><img src="assets/arrow_right.png"></a></div>
+        <div><a  href="#"><img src="assets/arrow_right.png"></a></div>
     </div>
     <div class="ourServices">
         <div class="servHead">
@@ -210,7 +245,7 @@
             </div>
             <div class="bulb">
                 <h3>Inovative Ideas</h3>
-                <p>Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
+                <p>Quisque luctus, quam eget molestie com-<br>modo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
             </div>
             <div class="love">
                 <h3>Love Is The Answer</h3>
@@ -220,12 +255,12 @@
         
         <div class="secRow">
             <div class="phone">
-                <h3>Responsive Layot</h3>
-                <p>Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Praesent elit leo.</p>
+                <h3>Responsive Layout</h3>
+                <p>Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Prae-<br>sent elit leo.</p>
             </div>
             <div class="bubble">
-                <h3>24/7 Support</h3>
-                <p>Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat. Pellentesque egestas venenatis lorem .</p>
+                <h3>24 / 7 Support</h3>
+                <p>Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat. Pellen-<br>tesque egestas venenatis lorem .</p>
             </div>
             <div class="star">
                 <h3>Feel Like A Star</h3>
