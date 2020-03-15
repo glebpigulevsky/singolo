@@ -15,12 +15,13 @@ for (let anchor of anchors) {
 
 window.onload = function() {
     addSelectRedTagMenu();
+    addSelectedPortfolioTag();
+    //setInterval();
 }
 
 
 const addSelectRedTagMenu = () => {
     document.querySelector('.menu').addEventListener('click', (e) => {
-        console.log(e);
         if (e.target.classList.contains('tagMenu')){
             let clickedMenuItem = e.target;
             removeInactiveMenuTag();
@@ -42,4 +43,47 @@ const  addActiveMenuTag = (clickedMenuItem) => {
     clickedMenuItem.classList.remove('inactiveMenu');
 } 
 
+
+
+const addSelectedPortfolioTag = () => {
+    document.querySelector('.portfolio__nav').addEventListener('click', (e) => {
+        if (e.target.classList.contains('tagPortfolio')){
+            let clickedPortfolioItem = e.target;
+            removeInactivePortfolioTag();
+            addActivePortfolioTag(clickedPortfolioItem);
+        }
+    })
+}
+const removeInactivePortfolioTag = () =>{
+    let tagsPortfolio = document.querySelectorAll('.tagPortfolio');
+    
+    tagsPortfolio.forEach(tag => {
+        tag.classList.remove('activePortfolioTag');
+        tag.classList.add('inactivePortfolioTag');
+    });
+}
+
+const  addActivePortfolioTag = (clickedPortfolioItem) => {
+    clickedPortfolioItem.classList.add('activePortfolioTag');
+    clickedPortfolioItem.classList.remove('inactivePortfolioTag');
+} 
+
+
+
 addSelectRedTagMenu();
+addSelectedPortfolioTag();
+
+
+//-------------SLIDER
+
+let counter = 0;
+let interval = setInterval(function(){
+    document.querySelectorAll('.itemSlider').forEach((item) => {
+        if(item.style.left === '-795px'){
+            clearInterval(interval);
+            return;
+        }
+        counter -=1;
+        item.style.left = `${counter}px`;
+    });
+},0.05);

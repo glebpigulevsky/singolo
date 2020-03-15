@@ -33,10 +33,15 @@
         
     <div class="sliderWidth">
         <div class="slider">
-            <div><a href="#"><img src="assets/arrow_left.png" alt="switch arrow for left"></a></div>
-            <div><img src="assets/iPhoneVertical.png" alt="phone vertical"  class="phoneVert"></div>
-            <div><img src="assets/iPhoneHorizontal.png" alt="phone horisontal"   class="phoneHor"></div>
-            <div><a  href="#"><img src="assets/arrow_right.png" alt="switch arrow for right"></a></div>
+            <div id="arrowLeft"><a href="#"><img src="assets/arrow_left.png" alt="switch arrow for left"></a></div>
+            <div class="slider__Container">
+                <div id="sliderElement1" class="itemSlider">
+                    <div><img src="assets/iPhoneVertical.png" alt="phone vertical"  class="phoneVert"></div>
+                    <div><img src="assets/iPhoneHorizontal.png" alt="phone horisontal"   class="phoneHor"></div>
+                </div>
+                <div id="sliderElement2" class="itemSlider"><img src="assets/img/slider/Slider.png" alt="phone on slider2"  class="phoneSlider2"></div>
+            </div>
+            <div id='arrowRight'><a  href="#"><img src="assets/arrow_right.png" alt="switch arrow for right"></a></div>
         </div>
     </div>
     <div class ="servicesWidth" id="service">
@@ -83,10 +88,10 @@
             <h3 class="portfolio__title">Portfolio</h3>
             <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
             <ul class="portfolio__nav">
-                <li>All</li>
-                <li>Web Design</li>
-                <li>Graphic Design</li>
-                <li style="    padding-right: 5px;">Artwork</li>
+                <li class="inactivePortfolioTag  tagPortfolio">All</li>
+                <li  class="inactivePortfolioTag  tagPortfolio">Web Design</li>
+                <li class="inactivePortfolioTag  tagPortfolio">Graphic Design</li>
+                <li style="    padding-right: 5px;" class="inactivePortfolioTag tagPortfolio">Artwork</li>
             </ul>
             <div class="portfolio__grid">
                 <div class="portfolio__pic1"></div>

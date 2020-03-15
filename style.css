@@ -8,6 +8,7 @@ div.headWidth {
     border-bottom: solid 6px #323746;
     position: sticky;
     top: 0px;
+    z-index: 20;
  }
 
  header {
@@ -259,13 +260,13 @@ div.headWidth {
  }
 
  img.phoneVert {
-    margin-left: -2px;
+    margin-left: -5px;
     margin-top: 0em;
  }
 
  img.phoneHor {
-    padding-left: 17px;
-    margin-top: -3px;
+    margin-left: 71px;
+    margin-top: 120px;
  }
 
  div.portfolio{
@@ -304,11 +305,12 @@ ul.portfolio__nav>li{
     border: 1px solid #666d89;
     padding: 2px 6px 3px 7px;
     margin-right: 5px;
-}
-ul.portfolio__nav>li:hover{
-    border: 1px solid #c5c5c5;
     cursor: pointer;
-    color: #dedede;
+}
+.activePortfolioTag{
+    border: 1px solid #c5c5c5 !important;
+    cursor: pointer !important;
+    color: #dedede !important;
 }
 h3.portfolio__title{
     font-size: 30px;
@@ -642,4 +644,21 @@ div.footer__container >div{
 }
 div.footer__links>a{
     margin-left: 6px;
+}
+
+#sliderElement1{
+    display: flex;
+}
+.slider__Container{
+    overflow: hidden;
+    width: 795px;
+    display: flex;
+    height: 483px;
+}
+#sliderElement2{
+    padding-left: 140px;
+}
+.itemSlider{
+    position: relative;
+    left: 0px;
 }
