@@ -34,8 +34,7 @@ div.headWidth {
  div.sliderWidth {
     width: 100%;
     height: 600px;
-    background-color: #f06c64;
-    border-bottom: solid 6px #ea676b;
+    
     
  }
 
@@ -260,7 +259,7 @@ div.headWidth {
  }
 
  img.phoneVert {
-    margin-left: -5px;
+    margin-left: 0px;
     margin-top: 0em;
  }
 
@@ -338,78 +337,78 @@ div.portfolio__grid{
     grid-gap: 20px;
     margin-top: 19px;
 }
-div.portfolio__pic1{
-    background-image: url(assets/img/portfolio/1.png);
+div.portfolio__grid>div:nth-child(1){
+    
     background-size: cover;
     grid-column: 1/2;
     grid-row: 1/2;
 }
 
-div.portfolio__pic2{
-    background-image: url(assets/img/portfolio/2.png);
+div.portfolio__grid>div:nth-child(2){
+    
     background-size: cover;
     grid-column: 2/3;
     grid-row: 1/2;
 }
 
-div.portfolio__pic3{
-    background-image: url(assets/img/portfolio/3.png);
+div.portfolio__grid>div:nth-child(3){
+    
     background-size: cover;
     grid-column: 3/4;
     grid-row: 1/2;
 }
 
-div.portfolio__pic4{
-    background-image: url(assets/img/portfolio/4.png);
+div.portfolio__grid>div:nth-child(4){
+
     background-size: cover;
     grid-column: 4/5;
     grid-row: 1/2;
 }
 
-div.portfolio__pic5{
-    background-image: url(assets/img/portfolio/5.png);
+div.portfolio__grid>div:nth-child(5){
+    
     background-size: cover;
     grid-column: 1/2;
     grid-row: 2/3;
 }
-div.portfolio__pic6{
-    background-image: url(assets/img/portfolio/6.png);
+div.portfolio__grid>div:nth-child(6){
+    
     background-size: cover;
     grid-column: 2/3;
     grid-row: 2/3;
 }
-div.portfolio__pic7{
-    background-image: url(assets/img/portfolio/7.png);
+div.portfolio__grid>div:nth-child(7){
+    
     background-size: cover;
     grid-column: 3/4;
     grid-row: 2/3;
 }
-div.portfolio__pic8{
-    background-image: url(assets/img/portfolio/8.png);
+div.portfolio__grid>div:nth-child(8){
+    
     background-size: cover;
     grid-column: 4/5;
     grid-row: 2/3;
 }
-div.portfolio__pic9{
-    background-image: url(assets/img/portfolio/9.png);
+div.portfolio__grid>div:nth-child(9){
+    
     background-size: cover;
     grid-column: 1/2;
     grid-row: 3/4;
 }
-div.portfolio__pic10{
-    background-image: url(assets/img/portfolio/10.png);
+div.portfolio__grid>div:nth-child(10){
+    
     background-size: cover;
     grid-column: 2/3;
     grid-row: 3/4;
 }
-div.portfolio__pic11{
-    background-image: url(assets/img/portfolio/11.png);
+div.portfolio__grid>div:nth-child(11){
+    
     background-size: cover;
     grid-column: 3/4;
     grid-row: 3/4;
 }
-div.portfolio__pic12{
-    background-image: url(assets/img/portfolio/12.png);
+div.portfolio__grid>div:nth-child(12){
+    
     background-size: cover;
     grid-column: 4/5;
     grid-row: 3/4;
@@ -646,19 +645,152 @@ div.footer__links>a{
     margin-left: 6px;
 }
 
-#sliderElement1{
+/* #sliderElement1{
     display: flex;
+}
+.justifySlider{
+    padding-left: 140px;
 }
 .slider__Container{
     overflow: hidden;
     width: 795px;
-    display: flex;
+    
     height: 483px;
+    position: relative;
 }
 #sliderElement2{
     padding-left: 140px;
 }
 .itemSlider{
+    position: absolute;
+}
+.itemSlider:nth-child(1){
+    left: 0;
+}
+.itemSlider:nth-child(2){
+    left: 100%;
+}
+.itemSlider:nth-child(3){
+    left: 200%;
+}
+.itemSlider:nth-child(4){
+    left: 300%;
+} */
+.btn{
+    width: 16px;
+    height: 27px;
+    background-image: url(assets/arrow_left.png);
+    
+}
+.btn-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.btn:nth-child(2){
+    transform:rotate(180deg);
+}
+
+.carousel-container {
+    display: block;
+    width: 1020px;
+    height: 594px;
+    margin: 0 auto;
+    overflow: hidden;
     position: relative;
-    left: 0px;
+}
+
+.carousel-slides {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+}
+
+.slide:nth-child(1) {
+    left: 0;
+    padding-left: 265px;
+    padding-top: 53px;
+}
+
+.slide:nth-child(2) {
+    left: 100%;
+}
+
+.slide:nth-child(3) {
+    left: 200%;
+    padding-left: 265px;
+    padding-top: 53px;
+}
+
+.slide:nth-child(4) {
+    left: 300%;
+}
+.slide:nth-child(5) {
+    left: 400%;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    width: 100%;
+    position: absolute;
+    top: 281px;
+    padding-left: 41px;
+    padding-right: 41px;
+}
+div.slide{
+   width: 1020px;
+}
+div.slide>img:nth-child(1){
+    margin-left: 109px;
+    margin-top: 52px;
+}
+div.slide>img:nth-child(2){
+    margin-left: 67px;
+    margin-top: 51px;
+}
+/*------выключение экрана телефона--------*/
+div.blackScreenVert{
+    position: relative;
+    top: -417px;
+    left: 125px;
+    width: 188px;
+    height: 333px;
+    background-color: black;
+    
+}
+div.blackScreenHor{
+    position: relative;
+    top: -680px;
+    left: 484px;
+    width: 333px;
+    height: 188px;
+    background-color: black;
+    
+}
+
+.hidden{
+    visibility: hidden;
+}
+.visible{
+    visibility:visible;
+}
+
+.sliderColorRed{
+    background-color: #f06c64;
+    border-bottom: solid 6px #ea676b;
+    transition: 1s ease-out;
+}
+.sliderColorBlue{
+    background-color: #648BF0;
+    border-bottom: solid 6px #657CB4;
+    transition: 1s ease-out;
 }

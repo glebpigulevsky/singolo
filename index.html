@@ -31,19 +31,79 @@
     </div>
     <div id="home1"></div>
         
-    <div class="sliderWidth">
-        <div class="slider">
-            <div id="arrowLeft"><a href="#"><img src="assets/arrow_left.png" alt="switch arrow for left"></a></div>
+    <div class="sliderWidth sliderColorRed" id="sliderBlock">
+        <div class="carousel-container">
+            <div class="carousel-slides">
+                
+                <img id="lastClone" src="assets/img/slider/Slider.png" alt="" class="slide" >
+                <div class="slide">
+                    <img src="assets/iPhoneVertical.png" alt="" >
+                    <img src="assets/iPhoneHorizontal.png" alt="" >
+                    <div class="blackScreenVert hidden" id="blackScreenVert">
+                        
+                    </div>
+
+                    <div class="blackScreenHor hidden" id="blackScreenHor">
+                        
+                    </div>
+                    
+                </div>
+                <img src="assets/img/slider/Slider.png" alt=""  class="slide">
+                <div class="slide" id="firstClone">
+                    <img src="assets/iPhoneVertical.png" alt="" >
+                    <img  src="assets/iPhoneHorizontal.png" alt="" >
+                    <div class="blackScreenVert hidden" id="blackScreenVert">
+                        
+                    </div>
+                    
+                    <div class="blackScreenHor hidden" id="blackScreenHor">
+                        
+                    </div>
+                </div>
+                
+            </div>
+            <div class="btn-container">
+                <div class="btn" id="prev"></div>
+                <div class="btn" id="next"></div>
+            </div>
+        </div>
+
+
+        <!-- <div class="slider">
+            <div id="arrowLeft" class="arrowsSlider">
+                <a href="#"><img src="assets/arrow_left.png" alt="switch arrow for left"></a>
+            </div>
             <div class="slider__Container">
+
+                <div  class="itemSlider  justifySlider" id="lastClone">
+                    <img src="assets/img/slider/Slider.png" alt="phone on slider2"  class="phoneSlider2">
+                </div>
                 <div id="sliderElement1" class="itemSlider">
                     <div><img src="assets/iPhoneVertical.png" alt="phone vertical"  class="phoneVert"></div>
                     <div><img src="assets/iPhoneHorizontal.png" alt="phone horisontal"   class="phoneHor"></div>
                 </div>
-                <div id="sliderElement2" class="itemSlider"><img src="assets/img/slider/Slider.png" alt="phone on slider2"  class="phoneSlider2"></div>
+                <div  class="itemSlider justifySlider">
+                    <img src="assets/img/slider/Slider.png" alt="phone on slider2"  class="phoneSlider2">
+                
+                </div>
+                <div id="sliderElement1" class="itemSlider" id="firstClone">
+                    <div><img src="assets/iPhoneVertical.png" alt="phone vertical"  class="phoneVert"></div>
+                    <div><img src="assets/iPhoneHorizontal.png" alt="phone horisontal"   class="phoneHor"></div>
+                </div>
+
             </div>
-            <div id='arrowRight'><a  href="#"><img src="assets/arrow_right.png" alt="switch arrow for right"></a></div>
+            <div id='arrowRight' class="arrowsSlider">
+                <a  href="#"><img src="assets/arrow_right.png" alt="switch arrow for right"></a>
+            </div>
         </div>
+
+        <div class="btn-container">
+            <div class="btn" id="prev"></div>
+            <div class="btn" id="next"></div>
+     
+        </div> -->
     </div>
+
     <div class ="servicesWidth" id="service">
         <div class="ourServices">
             <div class="servHead">
@@ -94,18 +154,18 @@
                 <li style="    padding-right: 5px;" class="inactivePortfolioTag tagPortfolio">Artwork</li>
             </ul>
             <div class="portfolio__grid">
-                <div class="portfolio__pic1"></div>
-                <div class="portfolio__pic2"></div>
-                <div class="portfolio__pic3"></div>
-                <div class="portfolio__pic4"></div>
-                <div class="portfolio__pic5"></div>
-                <div class="portfolio__pic6"></div>
-                <div class="portfolio__pic7"></div>
-                <div class="portfolio__pic8"></div>
-                <div class="portfolio__pic9"></div>
-                <div class="portfolio__pic10"></div>
-                <div class="portfolio__pic11"></div>
-                <div class="portfolio__pic12"></div>
+                <div class="portfolio__pic1"><img src="assets/img/portfolio/1.png" alt=""></div>
+                <div class="portfolio__pic2"><img src="assets/img/portfolio/2.png" alt=""></div>
+                <div class="portfolio__pic3"><img src="assets/img/portfolio/3.png" alt=""></div>
+                <div class="portfolio__pic4"><img src="assets/img/portfolio/4.png" alt=""></div>
+                <div class="portfolio__pic5"><img src="assets/img/portfolio/5.png" alt=""></div>
+                <div class="portfolio__pic6"><img src="assets/img/portfolio/6.png" alt=""></div>
+                <div class="portfolio__pic7"><img src="assets/img/portfolio/7.png" alt=""></div>
+                <div class="portfolio__pic8"><img src="assets/img/portfolio/8.png" alt=""></div>
+                <div class="portfolio__pic9"><img src="assets/img/portfolio/9.png" alt=""></div>
+                <div class="portfolio__pic10"><img src="assets/img/portfolio/10.png" alt=""></div>
+                <div class="portfolio__pic11"><img src="assets/img/portfolio/11.png" alt=""></div>
+                <div class="portfolio__pic12"><img src="assets/img/portfolio/12.png" alt=""></div>
             </div>
         </div>
     </div>
@@ -193,6 +253,7 @@
             </div>
         </div>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
