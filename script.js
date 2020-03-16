@@ -18,6 +18,7 @@ window.onload = function() {
     addSelectedPortfolioTag();
     //setInterval();
     //turnScreenPhoneVert();
+    addSelectRedPortfolioImage();
 }
 
 
@@ -228,29 +229,108 @@ let blackScreenHor = document.querySelector("#blackScreenHor");
 //----------перемешивание картинок в блоке портфолио-------//
 const mixingPortfolioImages = () =>{
 
-    let imgNode = document.querySelector("#portfolio > div > div").children;
-    var arrImg = Array.prototype.slice.call(imgNode);
-    function shuffle(arr){
-        var j, temp;
-        for(var i = arr.length - 1; i > 0; i--){
-            j = Math.floor(Math.random()*(i + 1));
-            temp = arr[j];
-            arr[j] = arr[i];
-            arr[i] = temp;
-        }
-        return arr;
-    }
-    console.log(arrImg);
+    let portfolioGrid = document.querySelector("#portfolio > div > div");
+    portfolioGrid.prepend(portfolioGrid.lastElementChild);
+    // var arrImg = Array.prototype.slice.call(imgNode);
+    // function shuffle(arr){
+    //     var j, temp;
+    //     for(var i = arr.length - 1; i > 0; i--){
+    //         j = Math.floor(Math.random()*(i + 1));
+    //         temp = arr[j];
+    //         arr[j] = arr[i];
+    //         arr[i] = temp;
+    //     }
+    //     return arr;
+    // }
+    // console.log(arrImg);
    
-     let newArr =  shuffle(arrImg);
-     console.log(newArr);
-     return newArr;
-    let portfolioDiv = document.querySelector("#portfolio > div > div");
-    portfolioDiv.innerHTML='';
-    for(let i = 0; i<newArr.length; i++){
-        portfolioDiv.innerHTML+=newArr[i];
-    }
-    
-
-
+    //  let newArr =  shuffle(arrImg);
+    //  console.log(newArr);
+    //  return newArr;
+    // let portfolioDiv = document.querySelector("#portfolio > div > div");
+    // portfolioDiv.innerHTML='';
+    // for(let i = 0; i<newArr.length; i++){
+    //     portfolioDiv.innerHTML+=newArr[i];
+    // }
 };
+
+//----------добавление стилей при нажатии на картинку в блоке потфолио-----------//
+
+// (function(){
+//     document.querySelector("#portfolio > div > div > div").addEventListener('click', (e) => {  
+//         console.log(e);
+//         let clickedPortfolioItem=e.target;
+        
+//         if (clickedPortfolioItem.classList.contains('inactivePortImg')){
+//             clickedPortfolioItem.classList.remove('inactivePortImg');
+//             clickedPortfolioItem.classList.add('activePortImg');
+//         } else if(clickedPortfolioItem.classList.contains('activePortImg')){
+//             clickedPortfolioItem.classList.remove('activePortImg');
+//             clickedPortfolioItem.classList.add('inactivePortImg');
+//         }
+//     })
+// })();
+
+const addSelectRedPortfolioImage = () => {
+    document.querySelector('.portfolio__grid').addEventListener('click', (e) => {
+        
+        if (e.target.classList.contains('imgTag')){
+            if (e.target.classList.contains('activePortImg')){
+                removeInactivePortImg();
+                return;
+            }
+            let clickedPortImg = e.target;
+            removeInactivePortImg();
+            addActivePortImg(clickedPortImg);
+        }
+    })
+}
+const removeInactivePortImg = () =>{
+    let portfolioPic = document.querySelectorAll('.imgTag');
+    
+    portfolioPic.forEach(pic => {
+        pic.classList.remove('activePortImg');
+        pic.classList.add('inactivePortImg');
+    });
+}
+
+const  addActivePortImg = (clickedPortImg) => {
+    clickedPortImg.classList.add('activePortImg');
+    clickedPortImg.classList.remove('inactivePortImg');
+} 
+
+
+//-----------------открытие модального окна формы---------------//
+
+(function(){
+    document.querySelector("#button_submit").addEventListener('click', (e) => {  
+        e.preventDefault(); // отмена действия браузера по умолчанию.
+
+        let modalDiv = document.querySelector('.modal__overlay'),
+            subject = document.querySelector('#subject'),
+            description = document.querySelector('#textarea');
+        let subjectContent = 'Without subject ';
+        let descriptionContent = 'Without description';
+        if(subject.value != ''){
+            subjectContent= "Subject: " + subject.value;
+        }
+        if(description.value != ''){
+            descriptionContent= "Description: " + description.value;
+        }
+        modalDiv.classList.remove('hidden');
+        
+        document.querySelector('.message').innerHTML = `<h3>The Letter was sent!</h3>
+        <p>${subjectContent}</p>
+        <p>${descriptionContent}</p>
+        <button class="closeModal">OK</button>
+        `;
+        (function(){
+            document.querySelector(".closeModal").addEventListener('click', (e) => {  
+                modalDiv.classList.add('hidden');
+                description.value='';
+                subject.value = '';
+
+            })
+        })();
+    })
+})();

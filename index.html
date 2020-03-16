@@ -10,6 +10,11 @@
     <title>Singolo</title>
 </head>
 <body>
+    <div class="modal__overlay hidden">
+        <div class="message">
+            
+        </div>
+    </div>
     <div class="headWidth">
         <header>
             <div class="logo">
@@ -151,21 +156,21 @@
                 <li class="inactivePortfolioTag  tagPortfolio">All</li>
                 <li  class="inactivePortfolioTag  tagPortfolio">Web Design</li>
                 <li class="inactivePortfolioTag  tagPortfolio">Graphic Design</li>
-                <li style="    padding-right: 5px;" class="inactivePortfolioTag tagPortfolio">Artwork</li>
+                <li style="padding-right: 5px;" class="inactivePortfolioTag tagPortfolio">Artwork</li>
             </ul>
             <div class="portfolio__grid">
-                <div class="portfolio__pic1"><img src="assets/img/portfolio/1.png" alt=""></div>
-                <div class="portfolio__pic2"><img src="assets/img/portfolio/2.png" alt=""></div>
-                <div class="portfolio__pic3"><img src="assets/img/portfolio/3.png" alt=""></div>
-                <div class="portfolio__pic4"><img src="assets/img/portfolio/4.png" alt=""></div>
-                <div class="portfolio__pic5"><img src="assets/img/portfolio/5.png" alt=""></div>
-                <div class="portfolio__pic6"><img src="assets/img/portfolio/6.png" alt=""></div>
-                <div class="portfolio__pic7"><img src="assets/img/portfolio/7.png" alt=""></div>
-                <div class="portfolio__pic8"><img src="assets/img/portfolio/8.png" alt=""></div>
-                <div class="portfolio__pic9"><img src="assets/img/portfolio/9.png" alt=""></div>
-                <div class="portfolio__pic10"><img src="assets/img/portfolio/10.png" alt=""></div>
-                <div class="portfolio__pic11"><img src="assets/img/portfolio/11.png" alt=""></div>
-                <div class="portfolio__pic12"><img src="assets/img/portfolio/12.png" alt=""></div>
+                <div class="portfolio__pic inactivePortImg"><img src="assets/img/portfolio/1.png" alt="" class="imgTag"></div>
+                <div class="portfolio__pic inactivePortImg"><img src="assets/img/portfolio/2.png" alt=""  class="imgTag"></div>
+                <div class="portfolio__pic inactivePortImg"><img src="assets/img/portfolio/3.png" alt="" class="imgTag"></div>
+                <div class="portfolio__pic inactivePortImg"><img src="assets/img/portfolio/4.png" alt="" class="imgTag"></div>
+                <div class="portfolio__pic inactivePortImg"><img src="assets/img/portfolio/5.png" alt="" class="imgTag"></div>
+                <div class="portfolio__pic inactivePortImg"><img src="assets/img/portfolio/6.png" alt="" class="imgTag"></div>
+                <div class="portfolio__pic inactivePortImg"><img src="assets/img/portfolio/7.png" alt="" class="imgTag"></div>
+                <div class="portfolio__pic inactivePortImg"><img src="assets/img/portfolio/8.png" alt="" class="imgTag"></div>
+                <div class="portfolio__pic inactivePortImg"><img src="assets/img/portfolio/9.png" alt="" class="imgTag"></div>
+                <div class="portfolio__pic inactivePortImg"><img src="assets/img/portfolio/10.png" alt="" class="imgTag"></div>
+                <div class="portfolio__pic inactivePortImg"><img src="assets/img/portfolio/11.png" alt="" class="imgTag"></div>
+                <div class="portfolio__pic inactivePortImg"><img src="assets/img/portfolio/12.png" alt="" class="imgTag"></div>
             </div>
         </div>
     </div>
@@ -208,7 +213,7 @@
             </div>
         </div>
     </div>
-
+    
     <div class="contact" id="contact">
         <div class="contact__container">
             <h3 class="contact__title">Get a Quote</h3>
@@ -217,12 +222,12 @@
 
                 <div class="contact__content__form">
                     <form>
-                        <div><input type="text" name="username" placeholder="Name(Requied)" required minlength="2"/></div>
-                        <div><input type="email" name="email" placeholder="Email(Requied)" required/></div>
-                        <div><input type="text" name="subject" placeholder="Subject"/></div>
-                        <div><textarea name="descrProject" cols="30" rows="10" placeholder="Descibe your project in detail"></textarea></div>
+                        <div><input id="username" type="text" name="username" placeholder="Name(Requied)" required minlength="2"/></div>
+                        <div><input id="email" type="email" name="email" placeholder="Email(Requied)" required/></div>
+                        <div><input id="subject" type="text" name="subject" placeholder="Subject"/></div>
+                        <div><textarea  id="textarea" name="descrProject" cols="30" rows="10" placeholder="Descibe your project in detail"></textarea></div>
                         <div class="button">
-                            <input type="submit" value="SEND">
+                            <input type="submit" value="SEND" id="button_submit">
                         </div>
                     </form>
                 </div>
@@ -241,7 +246,7 @@
             </div>
         </div>
     </div>
-
+    
     <div class="footer" id="footer">
         <div class="footer__container">
             <div>©Copyright2013</div>
