@@ -10,102 +10,172 @@
     <title>Singolo</title>
 </head>
 <body>
-    <div class="main">
-        <div class="headWidth">
-            <header>
-                <div class="logo">
-                    <h1><a href="#">singolo<span>*</span></a></h1>
-                </div>
-                <div class="menu">
-                    <a href="#">home</a>
-                    <div>·</div>
-                    <a href="#">services</a>
-                    <div>·</div>
-                    <a href="#">portfolio</a>
-                    <div>·</div>
-                    <a href="#">about</a>
-                    <div>·</div>
-                    <a href="#">contact</a>    
-                </div>
-
-            </header>
+    <div class="modal__overlay hidden">
+        <div class="message">
+            
         </div>
-        <div class="sliderWidth">
-            <div class="slider">
-                <div><a href="#"><img src="assets/arrow_left.png" alt="switch arrow for left"></a></div>
-                <div><img src="assets/iPhoneVertical.png" alt="phone vertical"  class="phoneVert"></div>
-                <div><img src="assets/iPhoneHorizontal.png" alt="phone horisontal"   class="phoneHor"></div>
-                <div><a  href="#"><img src="assets/arrow_right.png" alt="switch arrow for right"></a></div>
+    </div>
+    <div class="headWidth">
+        <header>
+            <div class="logo">
+                <h1><a href="#">singolo<span>*</span></a></h1>
             </div>
-        </div>
-        <div class ="servicesWidth">
-            <div class="ourServices">
-                <div class="servHead">
-                    <h2>Our Services</h2>
-                    <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+            <div class="menu" >
+                <a href="#home1" class="activeMenuTag tagMenu">home</a>
+                <div>·</div>
+                <a href="#service" class="inactiveMenuTag tagMenu">services</a>
+                <div>·</div>
+                <a href="#portfolio" class="inactiveMenuTag tagMenu ">portfolio</a>
+                <div>·</div>
+                <a href="#aboutUs" class="inactiveMenuTag tagMenu">about</a>
+                <div>·</div>
+                <a href="#contact" class="inactiveMenuTag tagMenu">contact</a>    
+            </div>
+
+        </header>
+    </div>
+    <div id="home1"></div>
+        
+    <div class="sliderWidth sliderColorRed" id="sliderBlock">
+        <div class="carousel-container">
+            <div class="carousel-slides">
+                
+                <img id="lastClone" src="assets/img/slider/Slider.png" alt="" class="slide" >
+                <div class="slide">
+                    <img src="assets/iPhoneVertical.png" alt="" >
+                    <img src="assets/iPhoneHorizontal.png" alt="" >
+                    <div class="blackScreenVert hidden" id="blackScreenVert">
+                        
+                    </div>
+
+                    <div class="blackScreenHor hidden" id="blackScreenHor">
+                        
+                    </div>
+                    
                 </div>
-                <div class="firstRow">
-                    <div class="pen">
-                        <h3>Custom Design</h3>
-                        <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
+                <img src="assets/img/slider/Slider.png" alt=""  class="slide">
+                <div class="slide" id="firstClone">
+                    <img src="assets/iPhoneVertical.png" alt="" >
+                    <img  src="assets/iPhoneHorizontal.png" alt="" >
+                    <div class="blackScreenVert hidden" id="blackScreenVert">
+                        
                     </div>
-                    <div class="bulb">
-                        <h3>Inovative Ideas</h3>
-                        <p>Quisque luctus,   quam eget molestie com- <br>modo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
-                    </div>
-                    <div class="love">
-                        <h3>Love Is The Answer</h3>
-                        <p>Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
+                    
+                    <div class="blackScreenHor hidden" id="blackScreenHor">
+                        
                     </div>
                 </div>
                 
-                <div class="secRow">
-                    <div class="phone">
-                        <h3>Responsive Layout</h3>
-                        <p>Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Prae-<br>sent elit leo.</p>
-                    </div>
-                    <div class="bubble">
-                        <h3>24 / 7 Support</h3>
-                        <p>Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat. Pellen-<br>tesque egestas venenatis lorem .</p>
-                    </div>
-                    <div class="star">
-                        <h3>Feel Like A Star</h3>
-                        <p>Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.</p>
-                    </div>
+            </div>
+            <div class="btn-container">
+                <div class="btn" id="prev"></div>
+                <div class="btn" id="next"></div>
+            </div>
+        </div>
+
+
+        <!-- <div class="slider">
+            <div id="arrowLeft" class="arrowsSlider">
+                <a href="#"><img src="assets/arrow_left.png" alt="switch arrow for left"></a>
+            </div>
+            <div class="slider__Container">
+
+                <div  class="itemSlider  justifySlider" id="lastClone">
+                    <img src="assets/img/slider/Slider.png" alt="phone on slider2"  class="phoneSlider2">
+                </div>
+                <div id="sliderElement1" class="itemSlider">
+                    <div><img src="assets/iPhoneVertical.png" alt="phone vertical"  class="phoneVert"></div>
+                    <div><img src="assets/iPhoneHorizontal.png" alt="phone horisontal"   class="phoneHor"></div>
+                </div>
+                <div  class="itemSlider justifySlider">
+                    <img src="assets/img/slider/Slider.png" alt="phone on slider2"  class="phoneSlider2">
+                
+                </div>
+                <div id="sliderElement1" class="itemSlider" id="firstClone">
+                    <div><img src="assets/iPhoneVertical.png" alt="phone vertical"  class="phoneVert"></div>
+                    <div><img src="assets/iPhoneHorizontal.png" alt="phone horisontal"   class="phoneHor"></div>
+                </div>
+
+            </div>
+            <div id='arrowRight' class="arrowsSlider">
+                <a  href="#"><img src="assets/arrow_right.png" alt="switch arrow for right"></a>
+            </div>
+        </div>
+
+        <div class="btn-container">
+            <div class="btn" id="prev"></div>
+            <div class="btn" id="next"></div>
+     
+        </div> -->
+    </div>
+
+    <div class ="servicesWidth" id="service">
+        <div class="ourServices">
+            <div class="servHead">
+                <h2>Our Services</h2>
+                <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+            </div>
+            <div class="firstRow">
+                <div class="pen">
+                    <h3>Custom Design</h3>
+                    <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
+                </div>
+                <div class="bulb">
+                    <h3>Inovative Ideas</h3>
+                    <p>Quisque luctus,   quam eget molestie com- <br>modo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
+                </div>
+                <div class="love">
+                    <h3>Love Is The Answer</h3>
+                    <p>Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
+                </div>
+            </div>
+            
+            <div class="secRow">
+                <div class="phone">
+                    <h3>Responsive Layout</h3>
+                    <p>Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Prae-<br>sent elit leo.</p>
+                </div>
+                <div class="bubble">
+                    <h3>24 / 7 Support</h3>
+                    <p>Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat. Pellen-<br>tesque egestas venenatis lorem .</p>
+                </div>
+                <div class="star">
+                    <h3>Feel Like A Star</h3>
+                    <p>Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.</p>
                 </div>
             </div>
         </div>
     </div>
+    
 
-
-    <div class="portfolio">
+    <div class="portfolio" id="portfolio">
         <div class="portfolio__container">
             <h3 class="portfolio__title">Portfolio</h3>
             <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
             <ul class="portfolio__nav">
-                <li>All</li>
-                <li>Web Design</li>
-                <li>Graphic Design</li>
-                <li style="    padding-right: 5px;">Artwork</li>
+                <li class="inactivePortfolioTag  tagPortfolio">All</li>
+                <li  class="inactivePortfolioTag  tagPortfolio">Web Design</li>
+                <li class="inactivePortfolioTag  tagPortfolio">Graphic Design</li>
+                <li style="padding-right: 5px;" class="inactivePortfolioTag tagPortfolio">Artwork</li>
             </ul>
             <div class="portfolio__grid">
-                <div class="portfolio__pic1"></div>
-                <div class="portfolio__pic2"></div>
-                <div class="portfolio__pic3"></div>
-                <div class="portfolio__pic4"></div>
-                <div class="portfolio__pic5"></div>
-                <div class="portfolio__pic6"></div>
-                <div class="portfolio__pic7"></div>
-                <div class="portfolio__pic8"></div>
-                <div class="portfolio__pic9"></div>
-                <div class="portfolio__pic10"></div>
-                <div class="portfolio__pic11"></div>
-                <div class="portfolio__pic12"></div>
+                <div class="portfolio__pic inactivePortImg"><img src="assets/img/portfolio/1.png" alt="" class="imgTag"></div>
+                <div class="portfolio__pic inactivePortImg"><img src="assets/img/portfolio/2.png" alt=""  class="imgTag"></div>
+                <div class="portfolio__pic inactivePortImg"><img src="assets/img/portfolio/3.png" alt="" class="imgTag"></div>
+                <div class="portfolio__pic inactivePortImg"><img src="assets/img/portfolio/4.png" alt="" class="imgTag"></div>
+                <div class="portfolio__pic inactivePortImg"><img src="assets/img/portfolio/5.png" alt="" class="imgTag"></div>
+                <div class="portfolio__pic inactivePortImg"><img src="assets/img/portfolio/6.png" alt="" class="imgTag"></div>
+                <div class="portfolio__pic inactivePortImg"><img src="assets/img/portfolio/7.png" alt="" class="imgTag"></div>
+                <div class="portfolio__pic inactivePortImg"><img src="assets/img/portfolio/8.png" alt="" class="imgTag"></div>
+                <div class="portfolio__pic inactivePortImg"><img src="assets/img/portfolio/9.png" alt="" class="imgTag"></div>
+                <div class="portfolio__pic inactivePortImg"><img src="assets/img/portfolio/10.png" alt="" class="imgTag"></div>
+                <div class="portfolio__pic inactivePortImg"><img src="assets/img/portfolio/11.png" alt="" class="imgTag"></div>
+                <div class="portfolio__pic inactivePortImg"><img src="assets/img/portfolio/12.png" alt="" class="imgTag"></div>
             </div>
         </div>
     </div>
 
-    <div class="aboutUs">
+    <div class="aboutUs" id="aboutUs">
         <div class="aboutUs__container ">
             <h3 class="aboutUs__title">About Us</h3>
             <p><span>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor</span><br> ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
@@ -143,8 +213,8 @@
             </div>
         </div>
     </div>
-
-    <div class="contact">
+    
+    <div class="contact" id="contact">
         <div class="contact__container">
             <h3 class="contact__title">Get a Quote</h3>
             <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
@@ -152,12 +222,12 @@
 
                 <div class="contact__content__form">
                     <form>
-                        <div><input type="text" name="username" placeholder="Name(Requied)" required minlength="2"/></div>
-                        <div><input type="email" name="email" placeholder="Email(Requied)" required/></div>
-                        <div><input type="text" name="subject" placeholder="Subject"/></div>
-                        <div><textarea name="descrProject" cols="30" rows="10" placeholder="Descibe your project in detail"></textarea></div>
+                        <div><input id="username" type="text" name="username" placeholder="Name(Requied)" required minlength="2"/></div>
+                        <div><input id="email" type="email" name="email" placeholder="Email(Requied)" required/></div>
+                        <div><input id="subject" type="text" name="subject" placeholder="Subject"/></div>
+                        <div><textarea  id="textarea" name="descrProject" cols="30" rows="10" placeholder="Descibe your project in detail"></textarea></div>
                         <div class="button">
-                            <input type="submit" value="SEND">
+                            <input type="submit" value="SEND" id="button_submit">
                         </div>
                     </form>
                 </div>
@@ -176,8 +246,8 @@
             </div>
         </div>
     </div>
-
-    <div class="footer">
+    
+    <div class="footer" id="footer">
         <div class="footer__container">
             <div>©Copyright2013</div>
             <div class="footer__links">
@@ -188,5 +258,7 @@
             </div>
         </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
