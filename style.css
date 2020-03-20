@@ -1,6 +1,21 @@
 *{
     box-sizing: border-box;
 }
+body, html{
+    scroll-behavior: smooth;
+}
+#ctn {
+    position: relative;
+   
+    height: 0px;
+  }
+  
+  #ctn a {
+    position: absolute;
+    left: 0px;
+    top: -60px;
+    
+  }
 div.headWidth {
     width: 100%;
     height: 95px;
