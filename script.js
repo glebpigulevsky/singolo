@@ -1,17 +1,40 @@
-const anchors = document.querySelectorAll('a[href*="#"]')
+// const anchors = document.querySelectorAll('a[href*="#"]')
 
-for (let anchor of anchors) {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault()
+// for (let anchor of anchors) {
+//   anchor.addEventListener('click', function (e) {
+//     e.preventDefault()
     
-    const blockID = anchor.getAttribute('href').substr(1)
+//     const blockID = anchor.getAttribute('href').substr(1)
     
-    document.getElementById(blockID).scrollIntoView({
-      behavior: 'smooth',
-      block: 'start'
-    })
-  })
+//     document.getElementById(blockID).scrollIntoView({
+//       behavior: 'smooth',
+//       block: 'start'
+//     })
+//   })
+// }
+document.addEventListener('scroll', onScroll);
+function onScroll(event){
+    const currPos = window.scrollY;
+    const divs = document.querySelectorAll('#body>div');
+    
+    const links = document.querySelectorAll('#menu>a');
+    
+    //console.log(currPos);
+    document.querySelectorAll('body>div').forEach((el) => {
+        //console.log(el);
+        //debugger;
+        
+         if(el.offsetTop-60 <= currPos && (el.offsetTop +el.offsetHeight) >currPos){
+             links.forEach((a) =>{
+                 a.classList.remove('activeMenuTag');
+                 if(el.getAttribute('rel')===a.getAttribute('href').substring(1)){
+                     a.classList.add('activeMenuTag');
+                 }
+             })
+        }
+    });
 }
+
 
 window.onload = function() {
     addSelectRedTagMenu();
@@ -229,7 +252,7 @@ let blackScreenHor = document.querySelector("#blackScreenHor");
 //----------перемешивание картинок в блоке портфолио-------//
 const mixingPortfolioImages = () =>{
 
-    let portfolioGrid = document.querySelector("#portfolio > div > div");
+    let portfolioGrid = document.querySelector(".portfolio > div > div");
     portfolioGrid.prepend(portfolioGrid.lastElementChild);
     // var arrImg = Array.prototype.slice.call(imgNode);
     // function shuffle(arr){
