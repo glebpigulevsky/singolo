@@ -183,11 +183,11 @@ div.headWidth {
   }
 
   .slider__control_left::before {
-    background-image: url(../assets/arrow_left.png);
+    background-image: url(assets/arrow_left.png);
   }
 
   .slider__control_right::before {
-    background-image: url(../assets/arrow_right.png);
+    background-image: url(assets/arrow_right.png);
   }
 
   .slider__item>div {
