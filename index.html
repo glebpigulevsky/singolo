@@ -15,8 +15,26 @@
             
         </div>
     </div>
+    <div class="mobile__menu" id="mobileMenu" >
+        <div class="burger__menu__open" id="burger__menu__open">
+            <img src="assets/img/header /Burger-menu-icon_90.png" alt="">
+        </div>
+        <div class=" logo__mobile__menu">
+            <h1><a href="#">singolo<span>*</span></a></h1>
+        </div>
+      <ul class="mobilMenuList hidden">
+          <li><a href="#home1" class="activeMenuTag">home</a></li>
+          <li><a href="#service" class="inactiveMenuTag">services</a></li>
+          <li><a href="#portfolio"  class="inactiveMenuTag">portfolio</a></li>
+          <li><a href="#aboutUs"  class="inactiveMenuTag">about</a></li>
+          <li><a href="#contact"  class="inactiveMenuTag">contact</a></li>
+      </ul>
+    </div>
     <div class="headWidth" id="home1">
         <header>
+            <div class="burger__menu" id="burger__Menu">
+                <img src="assets/img/header /Burger-menu-icon.png" alt="">
+            </div>
             <div class="logo">
                 <h1><a href="#">singolo<span>*</span></a></h1>
             </div>
@@ -35,8 +53,42 @@
         </header>
     </div>
     <div id="home1"></div>
-        
-    <div class="sliderWidth sliderColorRed" id="sliderBlock">
+
+
+    <div class="slider" id="sliderBlock">
+        <div class="slider__wrapper">
+          <div class="slider__item">
+            <div id="slideSec">
+              
+              <div onclick="switchOnOffScreenVert()">
+                <div class="blackVert hiddenScreen" id="blackScreenVert">
+                </div>
+                <img src="../assets/iPhoneVertical.png" alt="">
+              </div>
+    
+              <div onclick="switchOnOffScreenHor()">
+                <div class="helperSlide">
+    
+                </div>
+                <div class="blackHor hiddenScreen" id="blackScreenHor">
+                </div>
+                <img src="../assets/iPhoneHorizontal.png" alt="">
+              </div>  
+    
+            </div>
+          </div>
+          <div class="slider__item">
+            <div id="slideFirst">
+                <div><img src="../assets/img/slider/Slider.png" alt=""></div>
+            </div>
+          </div>
+        </div>
+        <div class="button__slide">
+          <a class="slider__control slider__control_left" href="#" role="button"></a>
+          <a class="slider__control slider__control_right" href="#" role="button"></a>
+        </div>
+      </div> 
+    <!-- <div class="sliderWidth sliderColorRed" id="sliderBlock"  >
         <div class="carousel-container">
             <div class="carousel-slides">
                 
@@ -106,10 +158,10 @@
             <div class="btn" id="prev"></div>
             <div class="btn" id="next"></div>
      
-        </div> -->
-    </div>
+        </div>
+    </div> -->
 
-    <div class ="servicesWidth"  rel="service">
+    <div class ="servicesWidth"  rel="service" >
         <div id="ctn">
             <a name="service">&nbsp;</a>
             
@@ -119,7 +171,47 @@
                 <h2>Our Services</h2>
                 <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
             </div>
-            <div class="firstRow">
+            <div id="serviceFlex">
+                <ul>
+                    <li>
+                        <div class="pen">
+                            <h3>Custom Design</h3>
+                            <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="bulb">
+                            <h3>Inovative Ideas</h3>
+                            <p>Quisque luctus,   quam eget molestie com- <br>modo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="love">
+                            <h3>Love Is The Answer</h3>
+                            <p>Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="phone">
+                            <h3>Responsive Layout</h3>
+                            <p>Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Prae-<br>sent elit leo.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="bubble">
+                            <h3>24 / 7 Support</h3>
+                            <p>Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat. Pellentesque egestas venenatis lorem .</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="star">
+                            <h3>Feel Like A Star</h3>
+                            <p>Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- <div class="firstRow">
                 <div class="pen">
                     <h3>Custom Design</h3>
                     <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
@@ -147,12 +239,12 @@
                     <h3>Feel Like A Star</h3>
                     <p>Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.</p>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
     
 
-    <div class="portfolio" rel="portfolio">
+    <div class="portfolio" rel="portfolio" >
         <div id="ctn">
             <a name="portfolio">&nbsp;</a>
             
@@ -183,18 +275,21 @@
         </div>
     </div>
 
-    <div class="aboutUs" rel="aboutUs">
+    <div class="aboutUs" rel="aboutUs" >
         <div id="ctn">
             <a name="aboutUs">&nbsp;</a>
             
           </div>
         <div class="aboutUs__container ">
             <h3 class="aboutUs__title">About Us</h3>
-            <p><span>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor</span><br> ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+            <p><span>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor</span> ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
             <div class="aboutUs__grid ">
                 <div class="aboutUs_pict1 aboutUsPict__content">
+                    <div class="aboutPhoto">
+                        <img src="assets/img/about/1.png" alt="">
+                    </div>
                     <h3 class="aboutUSPict__title">Adam Jensen</h3>
-                    <p>Quisque luctus, quam eget molestie commodo, lacus purus<br> cursus purus, nec rutrum tellus dolor id lorem.</p>
+                    <p>Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
                     <div class="aboutUs_sl">
                         <a href="#"><img src="assets/img/about/fcSl.png" alt="facebook pict"></a>
                         <a href="#"><img src="assets/img/about/gglSl.png" alt="google pict"></a>
@@ -203,8 +298,11 @@
                     </div>
                 </div>
                 <div class="aboutUs_pict2 aboutUsPict__content">
+                    <div class="aboutPhoto">
+                        <img src="assets/img/about/2.png" alt="">
+                    </div>
                     <h3 class="aboutUSPict__title">Desmond Miles</h3>
-                    <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus<br> in quam laoreet, viverra lacus ut, ultrices velit.</p>
+                    <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
                     <div class="aboutUs_sl">
                         <a href="#"><img src="assets/img/about/fcSl.png" alt="facebook pict"></a>
                         <a href="#"><img src="assets/img/about/gglSl.png" alt="google pict"></a>
@@ -213,8 +311,11 @@
                     </div>
                 </div>
                 <div class="aboutUs_pict3 aboutUsPict__content">
+                    <div class="aboutPhoto">
+                        <img src="assets/img/about/3.png" alt="">
+                    </div>
                     <h3 class="aboutUSPict__title">Scolara Visari</h3>
-                    <p>Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
+                    <p>Nulla sed nunc et tortor luctus faucibus. Morbi at aliqet turpis, et consequat felis. Quisque condimentum.</p>
                     <div class="aboutUs_sl">
                         <a href="#"><img src="assets/img/about/fcSl.png" alt="facebook pict"></a>
                         <a href="#"><img src="assets/img/about/gglSl.png" alt="google pict"></a>
@@ -226,7 +327,7 @@
         </div>
     </div>
     
-    <div class="contact" rel="contact">
+    <div class="contact" rel="contact"  >
         <div id="ctn">
             <a name="contact">&nbsp;</a>
             
@@ -276,5 +377,6 @@
     </div>
 
     <script src="script.js"></script>
+    <!-- <script src="slider/slider.js"></script> -->
 </body>
 </html>
