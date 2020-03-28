@@ -1183,6 +1183,8 @@ div.message>p{
     font-weight: 300;
     text-align: justify;
     margin-bottom: 11px;
+    overflow-x: hidden;
+    overflow-wrap: break-word;
 }
 button.closeModal{
     width: 87px;
