@@ -267,8 +267,10 @@ function switchOnOffScreenHor(){
     let blackScreenHor = document.querySelector("#blackScreenHor");
     if (blackScreenHor.classList.contains('hiddenScreen')){
         blackScreenHor.classList.remove('hiddenScreen');
-    } else{
-        blackScreenHor.classList.remove('hiddenScreen');
+        blackScreenHor.classList.add('activeScreen');
+    } else if(blackScreenHor.classList.contains('activeScreen')){
+        blackScreenHor.classList.remove('activeScreen');
+        blackScreenHor.classList.add('hiddenScreen');
     }
 }
 let blackScreenVert = document.querySelector("#blackScreenVert");
