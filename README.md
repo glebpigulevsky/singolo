@@ -1,1 +1,1 @@
-# https://CasperCarver.github.io/singolo/
+# https://glebpigulevsky.github.io/singolo/
